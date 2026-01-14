@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Non-Text Forms</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <form action="/test" method="get">
+            Select your gender:<br>
+            <input type="radio" name="gender" value="male"> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other<br>
+            <input type="radio" name="gender" value="prefer_not_say"> Prefer not to say<br>
+            <input type="submit" value="Submit Gender">
+        </form>
+        <br>
+        <form action="/test" method="get">
+            Select your hobbies:<br>
+            <input type="checkbox" name="hobby_reading" value="reading"> Reading<br>
+            <input type="checkbox" name="hobby_traveling" value="traveling"> Traveling<br>
+            <input type="checkbox" name="hobby_gaming" value="gaming"> Gaming<br>
+            <input type="checkbox" name="hobby_cooking" value="cooking"> Cooking<br>
+            <input type="submit" value="Submit Hobbies">
+        </form>
+        <br>
+        <form action="/test" method="get">
+            Choose your country:
+            <select name="country">
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+                <option value="india">India</option>
+                <option value="australia">Australia</option>
+                <option value="other">Other</option>
+            </select><br>
+            <input type="submit" value="Submit Country">
+        </form>
+    </body>
+</html>

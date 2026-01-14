@@ -1,0 +1,62 @@
+.symbol-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.symbol-table th, 
+.symbol-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+.symbol-table th {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.symbol-table code {
+    background-color: #333;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+    color: #ff79c6;
+}
+
+.result {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+}
+
+.contact-box {
+    background-color: var(--highlight-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    border: 1px solid var(--accent-color);
+}
+
+.contact-box a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+
+.icon {
+    width: 30px;
+    height: auto;
+}
