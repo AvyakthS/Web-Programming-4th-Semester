@@ -1,0 +1,57 @@
+/* LAB-5 styles: layout, tables, code samples, spans and boxes */
+:root{
+	--max-width: 980px;
+	--gap: 1rem;
+	--accent: #0066cc;
+	--muted: #666;
+	--box-bg: #f5f8ff;
+}
+*{box-sizing:border-box}
+body{font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; line-height:1.5; color:#222; margin:0; padding:1rem; background:#fff}
+.container{max-width:var(--max-width);margin:0 auto}
+.skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+.skip-link:focus{position:static;width:auto;height:auto;margin-bottom:1rem;left:0}
+.site-header{margin:0 0 1rem 0}
+.main-nav ul{list-style:none;padding:0;display:flex;gap:1rem;margin:0}
+.main-nav a{color:var(--accent);text-decoration:none}
+.example-section{margin:1.25rem 0;padding:0.5rem 0;border-top:1px solid #eee}
+
+/* Table styles */
+.table-wrap{overflow:auto}
+.marks-table{width:100%;border-collapse:collapse;border:2px solid #222}
+.marks-table caption{caption-side:top;font-weight:600;margin-bottom:0.5rem}
+.marks-table th,.marks-table td{padding:0.5rem;border:1px solid #ccc;text-align:left}
+.marks-table thead th{background:#ddd}
+.marks-table tbody tr:nth-child(odd){background:#fafafa}
+.marks-table .name{font-weight:700;color:var(--accent)}
+.marks-table .absent{background:orange;color:#000;text-align:center}
+.table-note{background:lightgreen;padding:0.5rem}
+
+/* Visually hidden (for accessibility) */
+.visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap;border:0;padding:0;margin:-1px}
+
+/* Code related */
+pre{background:#111;color:#e6e6e6;padding:0.75rem;border-radius:6px;overflow:auto}
+code var{font-style:italic}
+kbd{display:inline-block;padding:0.15rem 0.4rem;border:1px solid #bbb;border-bottom-width:2px;border-radius:4px;background:#f4f4f4}
+
+/* Media */
+.responsive-video{max-width:100%;height:auto;display:block}
+
+/* Spans */
+.highlight{background:linear-gradient(90deg, #fff7d6, #ffd);padding:0.15rem 0.3rem;border-radius:3px}
+.emphasis{font-weight:700;color:#b33}
+
+/* Boxes */
+.boxes{display:flex;gap:1rem;flex-wrap:wrap;margin-top:0.75rem}
+.box{flex:1 1 220px;background:var(--box-bg);padding:0.9rem;border-radius:8px;border:1px solid #dbe7ff;box-shadow:0 2px 6px rgba(20,40,80,0.06)}
+.box h4{margin-top:0;margin-bottom:0.5rem}
+
+/* Footer */
+.site-footer{margin-top:1.5rem;padding-top:1rem;border-top:1px solid #eee;color:var(--muted)}
+
+/* small screens */
+@media (max-width:560px){
+	.main-nav ul{flex-wrap:wrap}
+	.boxes{flex-direction:column}
+}

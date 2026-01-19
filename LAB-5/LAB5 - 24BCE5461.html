@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Lab 5</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<a class="skip-link" href="#main-content">Skip to content</a>
+		<div class="container">
+		<h1>HTML Examples: Tables, Media, Semantic Elements, Spans & Boxes</h1>
+		<header class="site-header">
+			<nav class="main-nav" aria-label="Main navigation">
+				<ul>
+					<li><a href="#part1">Tables</a></li>
+					<li><a href="#part2">Code Elements</a></li>
+					<li><a href="#part5">Spans &amp; Boxes</a></li>
+					<li><a href="#part3">Semantic Layout</a></li>
+					<li><a href="#part4">Audio / Video</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="main-content">
+			<section id="part1" class="example-section">
+				<h2>Tables</h2>
+				<div class="table-wrap">
+					<table class="marks-table" aria-describedby="marks-desc">
+						<caption>Marks Tally</caption>
+						<colgroup>
+							<col class="col-name" />
+							<col class="col-num" />
+							<col class="col-num" />
+							<col class="col-num" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">Name</th>
+								<th scope="col">Math</th>
+								<th scope="col">Science</th>
+								<th scope="col">English</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span class="name">Hrishikesh</span></td>
+								<td>99</td>
+								<td>96</td>
+								<td>97</td>
+							</tr>
+							<tr>
+								<td><span class="name">Supradhep</span></td>
+								<td>99</td>
+								<td>91</td>
+								<td>93</td>
+							</tr>
+							<tr>
+								<td><span class="name">Mohit</span></td>
+								<td colspan="2" class="absent">Absent</td>
+								<td>99</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="4" class="table-note">All marks are out of 100; "Absent" means the student did not attend.</td>
+							</tr>
+						</tfoot>
+					</table>
+					<p id="marks-desc" class="visually-hidden">Student marks for Math, Science and English (out of 100). "Absent" indicates the student did not attend that exam.</p>
+				</div>
+			</section>
+
+			<section id="part2" class="example-section">
+				<h2>Code-related Elements</h2>
+				<div class="code-sample">
+					<h3>Document</h3>
+					<pre><code>for <var>i</var> in range(2):
+		print(i)
+</code></pre>
+					<p>Save the document by pressing <kbd>Ctrl</kbd> + <kbd>S</kbd>.</p>
+					<p><samp>File not found! Press F1 to continue...</samp></p>
+				</div>
+			</section>
+
+			<section id="part5" class="example-section">
+				<h2>Spans and Boxes</h2>
+				<p>Use <span class="highlight">inline <span class="emphasis">spans</span></span> to style parts of a sentence without breaking flow.</p>
+
+				<div class="boxes">
+					<div class="box">
+						<h4>Box 1</h4>
+						<p>This is a simple content box. Boxes are useful for grouping content visually.</p>
+					</div>
+					<div class="box">
+						<h4>Box 2</h4>
+						<p>An example of a second box with a different background.</p>
+					</div>
+					<div class="box">
+						<h4>Box 3</h4>
+						<p>Boxes can be made responsive and aligned using CSS flexbox.</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="part3" class="example-section">
+				<h2>Header, Footer, Section, Article, Nav, Aside</h2>
+				<div id="festivals">
+					<article>
+						<h3>Pongal</h3>
+						<p>Pongal is a Tamil harvest festival celebrating abundance and thanking the Sun God for a bountiful harvest.</p>
+					</article>
+					<article>
+						<h3>Ugadi</h3>
+						<p>Ugadi marks the Hindu New Year and symbolizes fresh beginnings, with unique traditions like Ugadi Pachadi.</p>
+					</article>
+					<aside class="side-note">
+						<h4>Unity in diversity</h4>
+						<p>Indian festivals showcase the country's rich heritage and bring people together across regions and traditions.</p>
+					</aside>
+				</div>
+			</section>
+
+			<section id="part4" class="example-section">
+				<h2>Audio and Video</h2>
+				<div class="media-sample">
+					<h3>Audio</h3>
+					<audio controls>
+						<source src="audio.mp3" type="audio/mpeg" />
+						Your browser does not support the audio element.
+					</audio>
+
+					<h3>Video</h3>
+					<video controls class="responsive-video" poster="poster.jpg">
+						<source src="video.mp4" type="video/mp4" />
+						Your browser does not support the video element.
+					</video>
+				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<p>Author: Avyakth Shriram — Student ID: 24BCE5461</p>
+			<address>
+				<a href="mailto:your.email@example.com">avyakth1000@gmail.com</a>
+			</address>
+		</footer>
+		</div>
+	</body>
+</html>
