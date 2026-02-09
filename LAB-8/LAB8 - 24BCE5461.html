@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        JavaScript I/O
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    <section class="container">
+        <h1>
+            JavaScript I/O
+        </h1>
+    </section>
+
+    <section class="container">
+        <h2>
+            Campus Placements Eligibility Checker
+        </h2>
+
+        <div class="form-group">
+            <label for="cgpa">
+                Cumulative Grade Point Average (CGPA):
+            </label>
+            <input type="number" id="cgpa" step="0.1" placeholder="Enter your CGPA here">
+
+            <label for="arrears">
+                Backlogged Courses:
+            </label>
+            <input type="number" id="arrears" placeholder="Enter number of backlogs here">
+
+            <label for="internship">
+                Intership Status:
+            </label>
+            <select id="internship">
+                <option value="yes">
+                    Completed Successfully
+                </option>
+                <option value="no">
+                    Pending Completion
+                </option>
+            </select>
+
+            <button onclick="analyzeEligibility()">
+                Check Eligibility Status
+            </button>
+        </div>
+
+        <div id="eligibilityResult" class="result-box"></div>
+    </section>
+
+    <section class="container">
+        <h2>
+            Switch Student Profile
+        </h2>
+
+        <div class="profile-card">
+            <img id="profilePic" src="Profile A.jpeg" alt="Student A's Profile Picture" data-profile="A">
+
+            <p id="profileStatus">
+                Logged into Student A's Profile
+            </p>
+
+            <button id="toggleBtn" onclick="toggleProfile()">
+                Switch to Student B's Profile
+            </button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
