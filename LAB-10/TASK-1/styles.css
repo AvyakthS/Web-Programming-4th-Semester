@@ -1,0 +1,122 @@
+body {
+    font-family: Helvetica;
+    background-color: lightgreen;
+    color: black;
+    margin: 20px auto;
+    padding: 30px;
+    line-height: 1.5;
+}
+
+h1 {
+    text-align: center;
+    color: darkolivegreen;
+    margin: 0 auto;
+}
+
+form {
+    max-width: 900px;
+    margin: 30px auto;
+    background: olivedrab;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.15);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+label {
+    display: block;
+    font-weight: bolder
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid olive;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    color: darkolivegreen;
+    font-weight: bold;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: cornflowerblue;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+    display: flex;
+    gap: 25px;
+}
+
+button[type="submit"],
+button[type="reset"] {
+    flex: 1;
+    background-color: skyblue;
+    color: darkslategray;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="reset"] {
+    background-color: orange;
+}
+
+button[type="submit"]:hover {
+    background-color: cornflowerblue;
+}
+
+button[type="reset"]:hover {
+    background-color: orangered;
+}
+
+#result {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: left;
+    font-weight: bold;
+    border-radius: 10px;
+    min-height: 48px;
+    box-sizing: border-box;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+#result.success {
+    background: olive;
+    border: 1px solid darkolivegreen;
+    color: olivedrab;
+}
+
+#result.error {
+    background: orange;
+    border: 1px solid orangered;
+    color: maroon;
+}
+
+.small-note {
+    font-weight: normal;
+    font-size: 0.9rem;
+    color: black;
+}
+
+@media (max-width: 480px) {
+    form {
+        padding: 20px;
+    }
+    .buttons {
+        flex-direction: column;
+    }
+}
