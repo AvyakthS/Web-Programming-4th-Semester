@@ -1,0 +1,27 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    background-color: gray;
+}
+.box {
+    background-color:rgb(210, 78, 100);
+    padding: 25px;
+    border-radius: 8px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.hidden { display: none; }
+#resultDisplay {
+    text-align: left;
+    background: #eee;
+    padding: 10px;
+    margin-top: 15px;
+    white-space: pre-wrap;
+}
+button {
+    padding: 8px 16px;
+    cursor: pointer;
+}

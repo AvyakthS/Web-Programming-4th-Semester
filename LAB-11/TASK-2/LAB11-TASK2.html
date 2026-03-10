@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SMART TRAFFIC LIGHT SYSTEM</title>
+        <link rel="stylesheet" type="text/css" href="LAB11-TASK2.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Smart Traffic Light System</h1>
+            <div class="inner-container">
+                <form>
+                    Time (12-Hour Format): <input type="time" id="time" />
+                    Count (vehicles): <input type="text" id="count" />
+                </form>
+                <input value="Submit" type="button" id="submit-btn" onclick="findTime()"/>
+                <p id="output">Signal is green for the next:<span id="req"></span></p>
+            </div>
+        </div>
+        <script type="text/javaScript" src="LAB11-TASK2.js"></script>
+    </body>
+</html>

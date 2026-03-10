@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Toll Tax System</title>
+        <link rel="stylesheet" href="LAB11-TASK6.css">
+    </head>
+    <body>
+        <div class="box">
+            <h2>Toll System</h2>
+            <div id="setupStep">
+                <label>How many vehicles?</label>
+                <input type="number" id="totalVehicles" value="1">
+                <button onclick="startCollection()">Start</button>
+            </div>
+            <div id="inputStep" class="hidden">
+                <p id="currentVehicleLabel">Vehicle 1 of 5</p>
+                <label>Type:</label>
+                <select id="vType">
+                    <option value="car">Car (₹50)</option>
+                    <option value="truck">Truck (₹100)</option>
+                    <option value="bike">Bike (₹30)</option>
+                </select>
+                <br><br>
+                <label><input type="checkbox" id="isVIP"> VIP Pass?</label>
+                <br><br>
+                <button onclick="processNext()">Next Vehicle</button>
+            </div>
+            <pre id="resultDisplay"></pre>
+        </div>
+        <script src="LAB11-TASK6.js"></script>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bank loan approval system</title>
+        <style>
+            body{
+                background-color:blanchedalmond;
+            }
+            .container{
+                height: 60vh;
+                width: 40vw;
+                margin:auto;
+                padding-top:20px;
+                background-color:skyblue;
+                border-radius: 1.5rem;
+            }
+            .form{
+                display: flex;
+                flex-direction: column;
+                gap:10px;
+                margin: 20px;
+            }
+            #error{
+                color:red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 style="text-align:center; margin:auto; height:50px; width:60%; background-color:yellowgreen; border-radius:1rem">Check Your Loan Eligibility</h1>
+            <div>
+                <form class="form">
+                    AGE: <input type="text" id="age" class="num"/>
+                    SALARY: <input type="text" id ="salary" class="num"/>
+                    Credit-Score: <input type="text" id ="credit-score" class="num"/>
+                </form>
+                <div style="text-align:center; gap:20px;">
+                    <input type="button" onclick="submitted()" value="submit" style="background-color:yellowgreen; border:none; height:30px; width:70px; border-radius:2rem;"/>
+                    <p id="error"></p>
+                </div>
+            </div>
+        </div>
+        <script type="text/javaScript" src="LAB11-TASK1.js"></script>
+    </body>
+</html>

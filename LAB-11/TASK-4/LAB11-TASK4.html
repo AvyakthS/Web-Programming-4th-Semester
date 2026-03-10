@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Movie Ticket Calculator</title>
+        <link rel="stylesheet" href="LAB11-TASK4.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2>Movie Ticket Price</h2>
+            <label for="age">Enter Age: </label>
+            <input type="number" id="age" placeholder="Example: 25">
+            <label for="time">Show Time (24-Hour Format): </label>
+            <input type="number" id="time" placeholder="Example: 14 for 2PM" min="0" max="23">
+            <button onclick="calculatePrice()">Calculate Price</button>
+            <div id="result" class="result"></div>
+        </div>
+        <script src="LAB11-TASK4.js"></script>
+    </body>
+</html>

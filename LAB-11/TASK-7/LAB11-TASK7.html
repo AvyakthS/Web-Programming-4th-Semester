@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Smart Hospital Emergency System</title>
+        <link rel="stylesheet" href="LAB11-TASK7.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h2>Smart Emergency Terminal</h2>
+            <div id="setupStep">
+                <label>Number of Patients to Process:</label>
+                <input type="number" id="patientTotal" value="1" min="1">
+                <button class="btn btn-primary" onclick="initializeSystem()">Initialize System</button>
+            </div>
+            <div id="inputStep" class="hidden">
+                <div class="badge" id="patientCounter">Patient 1 of N</div>
+                    <div class="form-grid">
+                        <input type="number" id="age" placeholder="Age">
+                        <input type="number" id="temp" placeholder="Temp (°C)" step="0.1">
+                        <input type="number" id="heartRate" placeholder="Heart Rate (BPM)">
+                        <input type="number" id="oxygen" placeholder="Oxygen Level (%)">
+                        <select id="injuryType">
+                            <option value="accident">Accident</option>
+                            <option value="burn">Burn</option>
+                            <option value="fracture">Fracture</option>
+                            <option value="fever">Fever</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <select id="consciousness">
+                            <option value="conscious">Conscious</option>
+                            <option value="unconscious">Unconscious</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-success" onclick="processPatient()">Classify & Next</button>
+                </div>
+                <div id="reportStep" class="hidden">
+                    <pre id="resultDisplay"></pre>
+                    <div id="emergencyAlert" class="alert hidden">EMERGENCY ALERT: Critical Threshold Exceeded!</div>
+                        <button class="btn btn-gray" onclick="location.reload()">New Session</button>
+                    </div>
+                </div>
+            </div>
+        <script src="LAB11-TASK7.js"></script>
+    </body>
+</html>

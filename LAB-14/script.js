@@ -12,7 +12,7 @@ function handleActionClick() {
 
 function handleListenerClickAttach() {
     actionBtn.addEventListener('click', handleActionClick);
-    actionBtn.textContent = "Click To Detach Listener";
+    listenerBtn.textContent = "Click To Detach Listener";
     const p = document.createElement('p');
     p.textContent = 'Listener attached';
     p.style.fontStyle = 'italic';
@@ -21,7 +21,7 @@ function handleListenerClickAttach() {
 
 function handleListenerClickDetach() {
     actionBtn.removeEventListener('click', handleActionClick);
-    actionBtn.textContent = "Click To Attach Listener";
+    listenerBtn.textContent = "Click To Attach Listener";
     const p = document.createElement('p');
     p.textContent = 'Listener detached';
     p.style.fontStyle = 'italic';
