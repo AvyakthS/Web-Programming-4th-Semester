@@ -3,6 +3,7 @@ body {
     background-color: #f0f2f5;
     padding: 20px;
 }
+
 .card {
     background: white;
     padding: 20px;
@@ -10,23 +11,27 @@ body {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     max-width: 400px;
 }
+
 input, button {
     display: block;
     width: 100%;
     margin: 10px 0;
     padding: 8px;
 }
+
 button {
     background: #007bff;
     color: white;
     border: none;
     cursor: pointer;
 }
+
 pre {
     background: #eee;
     padding: 10px;
     border-radius: 4px;
 }
+
 .container{
     display:flex;
     flex-direction: column;

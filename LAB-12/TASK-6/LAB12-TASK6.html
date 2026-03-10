@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hotel Pricing System</title>
+        <link rel="stylesheet" href="LAB12-TASK6.css">
+    </head>
+    <body>
+        <h1>Hotel Room Pricing System</h1>
+        <form id="pricingForm">
+            <fieldset>
+                <legend>Room Selection Details</legend>
+                
+                <label for="month">Select Month:</label>
+                <select id="month">
+                    <option value="january">January</option>
+                    <option value="june">June</option>
+                    <option value="july">July</option>
+                    <option value="august">August</option>
+                    <option value="december">December</option>
+                    </select>
+                <br><br>
+
+                <label for="roomType">Select Room Type:</label>
+                <select id="roomType">
+                    <option value="standard">Standard</option>
+                    <option value="deluxe">Deluxe</option>
+                    <option value="suite">Suite</option>
+                </select>
+                <br><br>
+
+                <input type="button" value="Check Price" onclick="findPrice()">
+            </fieldset>
+        </form>
+        <p id="output"></p>
+        <script src="LAB12-TASK6.js"></script>
+    </body>
+</html>

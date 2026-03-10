@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Display Price multiple</title>
+        <link rel="stylesheet" href="LAB12-TASK5.css"/>
+    </head>
+    <body>
+        <h1 id="heading">Select your fruits</h1>
+        <form>
+            <select name="fruit" id="fruit-selection" multiple>
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="orange">Orange</option>
+                <option value="grapes">Grapes</option>
+            </select>
+            <p id="result"></p> 
+            <input type="button" value="Calculate Total" onclick="calculateTotal()"/>
+        </form>
+        <script src="LAB12-TASK5.js"></script>
+     </body>
+</html>

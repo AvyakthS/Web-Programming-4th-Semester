@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+fieldset {
+    background-color: #eeeeee; 
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+legend {
+    background-color: gray;    
+    color: white;              
+    padding: 5px 10px;       
+    border-radius: 4px;
+}
+
+input[type="button"] {
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 5px 15px;
+}
+
+#output {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+}

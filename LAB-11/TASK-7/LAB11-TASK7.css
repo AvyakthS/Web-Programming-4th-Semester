@@ -5,6 +5,7 @@ body {
     justify-content: center;
     padding-top: 40px;
 }
+
 .container {
     background: white;
     width: 450px;
@@ -13,17 +14,20 @@ body {
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     text-align: center;
 }
+
 .form-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
     margin: 20px 0;
 }
+
 input, select {
     padding: 10px;
     border: 2px solid #e0e0e0;
     border-radius: 6px;
 }
+
 .btn {
     width: 100%;
     padding: 12px;
@@ -33,18 +37,22 @@ input, select {
     cursor: pointer;
     margin-top: 10px;
 }
+
 .btn-primary {
     background: #7f8c8d;
     color: white;
 }
+
 .btn-success {
     background: #2d5a27;
     color: white;
 }
+
 .btn-gray {
     background: #bdc3c7;
     color: #333;
 }
+
 .badge {
     background: #f5f5dc;
     color: #7f8c8d;
@@ -52,6 +60,7 @@ input, select {
     border-radius: 20px;
     font-weight: bold;
 }
+
 #resultDisplay {
     text-align: left;
     background: #2c3e50;
@@ -60,6 +69,7 @@ input, select {
     border-radius: 6px;
     white-space: pre-wrap;
 }
+
 .alert {
     background: #e74c3c;
     color: white;
@@ -68,6 +78,7 @@ input, select {
     border-radius: 6px;
     animation: blink 1s infinite;
 }
+
 .hidden {
     display: none;
 }

@@ -1,0 +1,23 @@
+body{
+    background-color:blanchedalmond;
+}
+
+.container{
+    height: 60vh;
+    width: 40vw;
+    margin:auto;
+    padding-top:20px;
+    background-color:skyblue;
+    border-radius: 1.5rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin: 20px;
+}
+
+#error{
+    color:red;
+}
