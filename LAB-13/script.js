@@ -1,8 +1,6 @@
-// core setup and resizing logic
 let canvas1, canvas2, canvas3, canvas4;
 
 function resizeCanvases() {
-    // size each canvas to match computed CSS dimensions
     [canvas1, canvas2, canvas3, canvas4].forEach(c => {
         c.width = c.clientWidth;
         c.height = c.clientHeight;
@@ -10,7 +8,6 @@ function resizeCanvases() {
     drawAll();
 }
 
-// high-level redraw
 function drawAll() {
     drawMickey(canvas1.getContext('2d'));
     drawSmiley(canvas2.getContext('2d'));
@@ -18,7 +15,6 @@ function drawAll() {
     drawAtom(canvas4.getContext('2d'));
 }
 
-// draw routines (coordinates scaled to 300×300 template, so canvas becomes responsive)
 function drawMickey(ctx) {
     const w = ctx.canvas.width;
     ctx.clearRect(0, 0, w, w);
