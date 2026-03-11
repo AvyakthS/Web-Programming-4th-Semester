@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript</title>
+        <script language="Javascript" type="text/Javascript">
+            <!-- // This is a JavaScript comment written inside the HTML tags //-->
+            function sayHello() {
+                alert("Hello World")
+            }
+        </script>
+        <link type="text/Javascript" src="LAB7 - 24BCE5461.js">
+        <link rel="stylesheet" href="LAB7 - 24BCE5461.css" />
+    </head>
+    <body>
+        <noscript>
+            Sorry, your browser doesn't support Javascript!
+        </noscript>
+        <script type="text/javascript">
+            // We are writing the JavaScript inside the body tag of HTML here
+            document.write("Welcome! I am from the Body script")
+        </script>
+        <div class="container">
+            <p style="text-align:center;">JavaScript</p>
+            <p style="text-align:center;font-weight: bolder;" >While A = 10 && B = 20: </p>
+            <div class="part1">
+                <script type="text/javascript">
+                    var linebreak = "<br/>";
+                    var a =10;
+                    var b= 20;
+
+                    document.write("The value of a: (a=b) is ");
+                    document.write(result = (a=b));
+                    document.write(linebreak);
+
+                    document.write("The value of a: (a+=b) is ");
+                    document.write(result = (a+=b));
+                    document.write(linebreak);
+
+                    document.write("The value of a: (a-=b) is ");
+                    document.write(result = (a-=b));
+                    document.write(linebreak);
+
+                    document.write("The value of a: (a*=b) is ");
+                    document.write(result = (a*=b));
+                    document.write(linebreak);
+
+                    document.write("The value of a: (a/=b) is ");
+                    document.write(result = (a/=b));
+                    document.write(linebreak);
+
+                    document.write("The value of a: (a%=b) is ");
+                    document.write(result = (a%=b));
+                    document.write(linebreak);
+
+                    document.write("(a==b) is ");
+                    document.write(a==b);
+                    document.write(linebreak);
+
+                    document.write("(a<b) is ");
+                    document.write(a<b);
+                    document.write(linebreak);
+
+                    document.write("(a>b) is ");
+                    document.write(a>b);
+                    document.write(linebreak);
+
+                    document.write("(a<=b) is ");
+                    document.write((a<=b));
+                    document.write(linebreak);
+
+                    document.write("(a>=b) is ");
+                    document.write((a>=b));
+                    document.write(linebreak);
+
+                    document.write("(a!=b) is ");
+                    document.write((a!=b));
+                    document.write(linebreak);
+                </script>
+                <p style="text-align:center;font-weight: bolder;" >While A = true && B = false: </p>
+                <script type="text/Javascript" >
+                    var a=true;
+                    var b = false;
+
+                    document.write("The value of (a&&b) is ");
+                    document.write(result = (a&&b));
+                    document.write(linebreak);
+
+                    document.write("The value of (a||b) is ");
+                    document.write(result = (a||b));
+                    document.write(linebreak);
+                    
+                    document.write("The value of !(a&&b) is ");
+                    document.write(result = (!(a&&b)));
+                    document.write(linebreak);
+                </script>
+            </div>
+            <div class="btn">
+                <input type = "button" onclick = "sayHello()" value="Say Hello!" />
+            </div>
+        </div>
+    </body>
+</html>

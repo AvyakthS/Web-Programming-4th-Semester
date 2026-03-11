@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Objects in JavaScript</title>
+    </head>
+    <body style="background-color:blueviolet;">
+        <div class="container" style="padding:20vh 4vw;">
+            <div class="inner-cont" style="text-align:center; padding:20px; border-radius:2rem; background-color:pink; height:500px; width:90vw;">
+                <h1>Welcome, <span id="name" style="color:aqua"></span></h1>
+                <h1>Three Different Ways to Create an Object: </h1>
+                <div class="obj-crean" style="display:flex; gap:50px; padding:20px;">
+                    <div class="method1">
+                        <h1>Object Literal Method</h1>
+                        <form>
+                            Id  : <input type="text" id="id1"/>
+                            Name: <input type="text" id="name1"/>
+                        </form>
+                        <button onclick="obj1()" style="background-color:yellowgreen; margin-top:20px; border-radius:5px; order:none; width:100px; height:35px;">Click me!</button>
+                        <p id="para1"></p>
+                    </div>
+                    <div class="method2">
+                        <h1>Create Instance Of Object</h1>
+                        <form>
+                            Id  : <input type="text" id="id2" name="id2"/>
+                            Name: <input type="text" id="name2" name="name2"/>
+                        </form>
+                        <button style="background-color:yellowgreen; margin-top:20px; border-radius:5px; border:none; width:100px; height:35px;" onclick="obj2(document.getElementById('id2').value,document.getElementById('name2').value)">click me</button>
+                        <p id="para2"></p>
+                    </div>
+                    <div class="method3">
+                        <h1>Object Constructor</h1>
+                        <form>
+                            Id  : <input type="text" id="id3"/>
+                            Name: <input type="text" id="name3"/>
+                        </form>
+                        <button style="background-color:yellowgreen; margin-top:20px; border-radius:5px; border:none; width:100px; height:35px;" onclick="obj3()">click me!</button>
+                        <p id="para3"></p>
+                    </div>
+                </div>
+            </div>
+            <h1 style="color:white; text-align:center; margin-top:100px;">Use of JS objects</h1>
+            <div style="display:flex; gap:10%; justify-content:center; margin-top:30px; margin-bottom:30px;">
+                <div class="par2" style="text-align:center;">
+                    <button style="background-color:yellowgreen; margin-top:20px; border-radius:5px; border:none; width:100px; height:35px;" onclick="calculate()">Calculate</button>
+                    <div id="props" style="background-color:pink; border-radius: 3rem; padding:10px; width:300px; margin:auto; margin-top:20px;">
+                        <p id="length">Length: </p><br/>
+                        <p id="reverse">Reverse: </p><br/>
+                        <p id="conc">Concatenation: </p><br/>
+                        <p id="subs">Substring: </p><br/>
+                        <p id="includes">Includes: </p><br/>
+                        <p id="copy">Copy: </p><br/>
+                        <p id="casecon">CaseConversion: </p><br/>
+                    </div>
+                </div>
+                <div class="par2" style="text-align:center;">
+                    <button style="background-color:yellowgreen; margin-top:20px; border-radius:5px; border:none; width:100px; height:35px;" onclick="calculateMath()">Calculate</button>
+                    <div id="props" style="background-color:pink; border-radius: 3rem; padding:10px; width:300px; margin:auto; margin-top:20px;">
+                        <p id="math-pi">Math.PI: </p><br/>
+                        <p id="math-round">Math.Round: </p><br/>
+                        <p id="math-floor">Math.Floor: </p><br/>
+                        <p id="math-ceil">Math.Ceil: </p><br/>
+                        <p id="math-sqrt">Math.Sqrt: </p><br/>
+                        <p id="math-pow">Math.Pow: </p><br/>
+                    </div>
+                </div>
+                <div class="par2" style="text-align:center;">
+                    <button style="background-color:yellowgreen; margin-top:20px; border-radius:5px; border:none; width:100px; height:35px;" onclick="calculateArray()">Calculate</button>
+                    <div id="props" style="background-color:pink;border-radius: 3rem;padding:10px;width:300px;margin:auto;margin-top:20px;">
+                        <p id="array-length">Array Length: </p><br/>    
+                        <p id="array-reverse">Reversed Array: </p><br/>
+                        <p id="array-sorted">Sorted Array: </p><br/>
+                        <p id="array-sum">Sum of Array: </p><br/>
+                        <p id="array-min">Min Value: </p><br/>
+                        <p id="array-max">Max Value: </p><br/>
+                        <p id ="ith element">Ith Element: </p><br/>
+                    </div>
+                </div>
+            </div>
+            <div style="display:flex; margin:auto; gap:10%; color:white; justify-content:center; margin-top:30px; margin-bottom:30px;">
+                <div class="par2" style="text-align:center;">
+                    <h1>Form Validation:</h1>
+                    <div id="props" style="background-color:pink; border-radius: 3rem; padding:10px; width:300px; margin:auto; margin-top:20px;">
+                        <form>
+                            User Name: <input type="text" id="userName"><br/><br/>
+                            Age: <input type="text" id="age"><br/><br/>
+                            Password: <input type="password" id="password" maxlength="10" minlength="8" ><br/><br/>
+                            Confirm Password: <input type ="password" id="confirm" maxlength="10" minlength="8"><br/><br/> 
+                            Address: <textarea rows="2" cols="30" id="Address"></textarea><br/><br/>
+                            <input style="background-color:yellowgreen; margin-top:20px; border-radius:5px; border:none; width:100px; height:35px;" type="button" onclick="sub()" value="Submit here">
+                            <input style="background-color:yellowgreen; margin-top:20px; border-radius:5px; border:none; width:100px; height:35px;" type="reset" value="reset">
+                        </form>
+                    </div>
+            </div>
+            <div class="par2" style="text-align:center;">
+                    <h1>Login page using form: </h1>
+                    <div id="props" style="background-color:pink; border-radius:3rem; padding:10px; width:300px; margin:auto; margin-top:20px;">
+                        <form name="loginForm" onSubmit="return validateLoginForm()" method="post">
+                            <label for="username">Username: </label><br>
+                            <input type="text" id="username" name="username"><br><br>
+
+                            <label for="password">Password: </label><br>
+                            <input type="password" id="password" name="password"><br><br>
+
+                            <input style="background-color:yellowgreen; margin-top:20px; border-radius:5px; border:none; width:100px; height:35px;" type="submit" value="Login">
+                        </form>
+                    </div>
+            </div>
+            <div class="par2" style="text-align:center;">
+                    <h1>Form Using Regex: </h1>
+                    <div id="props" style="background-color:pink; border-radius:3rem; padding:10px; width:300px; margin:auto; margin-top:20px;">
+                        <form name="loginForm" onSubmit="return validateLoginForm()" method="post">
+                            <label for="lettersField">Letters Field: </label><br>
+                            <input type="text" id="lettersField" name="lettersField" onkeypress="onlyLetters(event)"><br><br>
+                        </form>
+                        <h1 style="background-color:yellowgreen; margin-top:20px; margin:auto; border-radius:5px; border:none; width:100px; height:25px; font-size:15px;" >:Letters Only:</h1>
+                    </div>
+            </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="LAB9 - 24BCE5461.js"></script>
+    </body>
+</html>
